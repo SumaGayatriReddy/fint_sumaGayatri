@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-09T15:44:38 IST" name="suite1" finished-at="2022-02-09T15:47:49 IST" duration-ms="190372">
+    <groups>
+    </groups>
+    <test started-at="2022-02-09T15:44:38 IST" name="test1" finished-at="2022-02-09T15:45:30 IST" duration-ms="51270">
+      <class name="executerScripts.DashboardScript">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:executerScripts.DashboardScript@2053d869]" started-at="2022-02-09T15:44:38 IST" name="openBrowser" finished-at="2022-02-09T15:45:21 IST" duration-ms="42510" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="dashBoard()[pri:0, instance:executerScripts.DashboardScript@2053d869]" started-at="2022-02-09T15:45:21 IST" name="dashBoard" finished-at="2022-02-09T15:45:28 IST" duration-ms="7224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashBoard -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:executerScripts.DashboardScript@2053d869]" started-at="2022-02-09T15:45:28 IST" name="closeBrowser" finished-at="2022-02-09T15:45:30 IST" duration-ms="1477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- executerScripts.DashboardScript -->
+    </test> <!-- test1 -->
+    <test started-at="2022-02-09T15:45:30 IST" name="test2" finished-at="2022-02-09T15:46:51 IST" duration-ms="81281">
+      <class name="executerScripts.ContactScript">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:executerScripts.ContactScript@66d3eec0]" started-at="2022-02-09T15:45:30 IST" name="openBrowser" finished-at="2022-02-09T15:46:27 IST" duration-ms="56689" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="contact()[pri:0, instance:executerScripts.ContactScript@66d3eec0]" started-at="2022-02-09T15:46:27 IST" name="contact" finished-at="2022-02-09T15:46:49 IST" duration-ms="22469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contact -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:executerScripts.ContactScript@66d3eec0]" started-at="2022-02-09T15:46:49 IST" name="closeBrowser" finished-at="2022-02-09T15:46:51 IST" duration-ms="2118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- executerScripts.ContactScript -->
+    </test> <!-- test2 -->
+    <test started-at="2022-02-09T15:46:51 IST" name="test3" finished-at="2022-02-09T15:47:49 IST" duration-ms="57292">
+      <class name="executerScripts.AccountScript">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:executerScripts.AccountScript@f5acb9d]" started-at="2022-02-09T15:46:51 IST" name="openBrowser" finished-at="2022-02-09T15:47:36 IST" duration-ms="44441" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="account()[pri:0, instance:executerScripts.AccountScript@f5acb9d]" started-at="2022-02-09T15:47:36 IST" name="account" finished-at="2022-02-09T15:47:47 IST" duration-ms="11358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- account -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:executerScripts.AccountScript@f5acb9d]" started-at="2022-02-09T15:47:47 IST" name="closeBrowser" finished-at="2022-02-09T15:47:49 IST" duration-ms="1488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- executerScripts.AccountScript -->
+    </test> <!-- test3 -->
+  </suite> <!-- suite1 -->
+</testng-results>
