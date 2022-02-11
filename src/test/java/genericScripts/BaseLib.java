@@ -47,11 +47,10 @@ public class BaseLib {
 		property = new Properties();
 		property.load(file);
 		driver.get(property.getProperty("url"));
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		System.out.println("pageOpen");
 		String parent=wdriver.getWindowHandle();
 		System.out.println(parent);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.linkText("Login")).click();
 		driver.switchTo().window(parent);
 		
@@ -64,7 +63,7 @@ public class BaseLib {
 		 
 		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		 driver.findElement(By.id("Login")).click();
-		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		 
 		 //driver.navigate();
 }
 @AfterTest	

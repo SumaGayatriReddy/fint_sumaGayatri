@@ -10,10 +10,13 @@ public class AccountScript extends BaseLib{
 
 @Test
 public void account() throws Exception {
+
 	Dashboard dashBoard =  new Dashboard(driver);
+	Account account = new Account(driver);
+	
 	dashBoard.accSelect(); 
 	dashBoard.createAccount();
-	Account account = new Account(driver);
+	
 	account.createNew();
 }
 

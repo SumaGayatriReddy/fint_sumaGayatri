@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 
@@ -30,9 +32,9 @@ public class Dashboard {
 	
 	@FindBy(xpath="//*[@data-id='Task']")
 	WebElement taskBtn;
-	@FindBy(xpath="(//a[@title='Show one more action'])")
+	@FindBy(xpath="//a[@class='slds-button slds-button--icon-x-small slds-button--icon-border-filled']")
 	WebElement taskdropDwn;
-	@FindBy(xpath="//a[@title='New Task']")
+	@FindBy(xpath="//a[@title='New Task']//parent::li//parent::ul//parent::div//parent::div")
 	WebElement newTask;
 	
 	@FindBy(xpath="//*[@data-id='ContentNote']")
@@ -49,7 +51,7 @@ public Dashboard(WebDriver driver)
 	this.driver=driver;
 	PageFactory.initElements(driver, this);
 	System.out.println("Dashboard");
-	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 }
 
 public void accSelect()   {  
@@ -61,7 +63,7 @@ public void accSelect()   {
 public void createAccount()   { 
 	newAccount.click();
 	System.out.println(newAccount.getText());
-	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	
 }  
 public void conSelect()   {  
 
@@ -76,7 +78,7 @@ public void createContact()
 {
 	newContact.click();
 	System.out.println(newContact.getText());
-	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	
 }  
 public void oppSelect() 
 {  
@@ -89,7 +91,7 @@ public void createOpportunity()
 {
 	newOpp.click();
 	System.out.println(newOpp.getText());
-	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	
 }  
 
 public void taskSelect() 
@@ -102,10 +104,12 @@ public void taskSelect()
 public void createTask() 
 {
 	taskdropDwn.click();
-	System.out.println(newTask.getText());
+	System.out.println(taskdropDwn.getText());
+	WebDriverWait wait = new WebDriverWait(driver, 20);
+	wait.until(ExpectedConditions.elementToBeClickable(newTask));
 	newTask.click();
 	System.out.println(newTask.getText());
-	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	
 }  
 public void noteSelect() 
 {  
@@ -118,7 +122,7 @@ public void createNote()
 {
 	newNote.click();
 	System.out.println(newNote.getText());
-	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	
 }  
 
 }

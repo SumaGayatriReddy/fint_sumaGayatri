@@ -27,7 +27,7 @@ public class ContentNote {
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);	
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	
 	}
 	public void createNoteNew() 
 	{
@@ -42,7 +42,7 @@ public class ContentNote {
 	public void addNote()
 	{
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,350)", "");
+     	js.executeScript("window.scrollBy(0,350)", "");
 		System.out.println("click on add");
 		add.click();
 		System.out.println("success");

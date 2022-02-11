@@ -9,10 +9,13 @@ import pom_salesforce.ContentNote;
 public class ContentNoteScript extends BaseLib{
 @Test
 public void contentNewNote() throws Exception {
+	
 	Dashboard dashBoard =  new Dashboard(driver);
+	ContentNote contact = new ContentNote(driver);
+
 	dashBoard.noteSelect(); 
 	dashBoard.createNote();
-	ContentNote contact = new ContentNote(driver);
+	
 	contact.createNoteNew();
 	contact.addNote();
 }

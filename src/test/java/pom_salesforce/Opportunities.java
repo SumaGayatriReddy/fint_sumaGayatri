@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Opportunities {
 	@FindBy(xpath="//input[@name='Name'] ")
@@ -39,24 +41,23 @@ public class Opportunities {
 	{
 		opportunityName.sendKeys("Logic");
 		System.out.println("Opportunity Name");
-		searchAccount.sendKeys("De");
+		searchAccount.sendKeys("Hyatt");
 		System.out.println("Search");	
 		System.out.println(searchAccount.getText());
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.elementToBeClickable(selectAccount));
 		selectAccount.click();
 		System.out.println("Account Selected");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		System.out.println(selectAccount.getText());
 		closeDate.click();
 		System.out.println("closeDate");
 		selectCloseDate.sendKeys("15/06/2019");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		//System.out.println("closeDate Select");
+		System.out.println(selectCloseDate.getText());
 		stage.click();
 		System.out.println("Stage");
 		//stageSelect.click();
 		System.out.println("Stage Select");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
 		save.click();
 		System.out.println("click on save");
 		

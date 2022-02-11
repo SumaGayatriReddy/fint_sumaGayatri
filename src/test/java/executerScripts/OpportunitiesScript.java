@@ -9,10 +9,13 @@ import pom_salesforce.Dashboard;
 public class OpportunitiesScript extends BaseLib{
 @Test
 public void createNewOpportunity() throws Exception {
+	
 	Dashboard dashBoard =  new Dashboard(driver);
+	Opportunities opportuntiy = new Opportunities(driver);
+	
 	dashBoard.oppSelect(); 
 	dashBoard.createOpportunity();
-	Opportunities opportuntiy = new Opportunities(driver);
+	
 	opportuntiy.createOpportunity();
 }
 

@@ -8,12 +8,13 @@ public class DashboardScript extends BaseLib{
 
 @Test
 public void dashBoard() throws Exception {
-Dashboard dashBoard =  new Dashboard(driver);
-dashBoard.accSelect(); 
-dashBoard.conSelect(); 
-dashBoard.oppSelect();
-dashBoard.taskSelect(); 
-dashBoard.noteSelect(); 
+
+	Dashboard dashBoard =  new Dashboard(driver);
+	dashBoard.accSelect(); 
+	dashBoard.conSelect(); 
+	dashBoard.oppSelect();
+	dashBoard.taskSelect(); 
+	dashBoard.noteSelect(); 
 }
 
 

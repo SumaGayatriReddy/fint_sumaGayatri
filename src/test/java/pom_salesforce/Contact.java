@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Contact {
 
@@ -85,9 +87,11 @@ public class Contact {
 		System.out.println("Firstname");
 		lastName.sendKeys("Beta");
 		System.out.println("contact name");
-		searchAccount.sendKeys("Ba");
+		searchAccount.sendKeys("Ash");
 		System.out.println("Search");	
 		System.out.println(searchAccount.getText());
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.elementToBeClickable(selectAccount));
 		selectAccount.click();
 		System.out.println("Account Selected");
 		System.out.println(selectAccount.getText());

@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Account {
 	@FindBy(xpath="(//input[@role='combobox'])[3]")
@@ -23,21 +25,19 @@ public class Account {
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
-		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 	public void createNew()   
 	{
 		accSearch.click();
-		accSearch.sendKeys("Hy");
+		accSearch.sendKeys("Macy");
 		System.out.println("Account search");
-		
-		accName.getText();
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.elementToBeClickable(accName));
 		System.out.println("Account Name");
 		System.out.println(accName.getText()+"Account");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		accName.click();
-		System.out.println("Account click");
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
 		save.click();
 		System.out.println("click on save");
 		
