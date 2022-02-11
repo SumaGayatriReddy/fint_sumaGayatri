@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-09T15:44:38 IST" name="suite1" finished-at="2022-02-09T15:47:49 IST" duration-ms="190372">
+  <suite started-at="2022-02-11T13:53:24 IST" name="suite1" finished-at="2022-02-11T13:58:50 IST" duration-ms="325998">
     <groups>
     </groups>
-    <test started-at="2022-02-09T15:44:38 IST" name="test1" finished-at="2022-02-09T15:45:30 IST" duration-ms="51270">
+    <test started-at="2022-02-11T13:53:24 IST" name="test1" finished-at="2022-02-11T13:54:18 IST" duration-ms="53726">
       <class name="executerScripts.DashboardScript">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:executerScripts.DashboardScript@2053d869]" started-at="2022-02-09T15:44:38 IST" name="openBrowser" finished-at="2022-02-09T15:45:21 IST" duration-ms="42510" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:executerScripts.DashboardScript@2053d869]" started-at="2022-02-11T13:53:24 IST" name="openBrowser" finished-at="2022-02-11T13:54:14 IST" duration-ms="50031" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="dashBoard()[pri:0, instance:executerScripts.DashboardScript@2053d869]" started-at="2022-02-09T15:45:21 IST" name="dashBoard" finished-at="2022-02-09T15:45:28 IST" duration-ms="7224" status="PASS">
+        <test-method signature="dashBoard()[pri:0, instance:executerScripts.DashboardScript@2053d869]" started-at="2022-02-11T13:54:14 IST" name="dashBoard" finished-at="2022-02-11T13:54:17 IST" duration-ms="2871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dashBoard -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:executerScripts.DashboardScript@2053d869]" started-at="2022-02-09T15:45:28 IST" name="closeBrowser" finished-at="2022-02-09T15:45:30 IST" duration-ms="1477" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:executerScripts.DashboardScript@2053d869]" started-at="2022-02-11T13:54:17 IST" name="closeBrowser" finished-at="2022-02-11T13:54:18 IST" duration-ms="682" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- executerScripts.DashboardScript -->
     </test> <!-- test1 -->
-    <test started-at="2022-02-09T15:45:30 IST" name="test2" finished-at="2022-02-09T15:46:51 IST" duration-ms="81281">
+    <test started-at="2022-02-11T13:54:18 IST" name="test2" finished-at="2022-02-11T13:55:31 IST" duration-ms="72329">
       <class name="executerScripts.ContactScript">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:executerScripts.ContactScript@66d3eec0]" started-at="2022-02-09T15:45:30 IST" name="openBrowser" finished-at="2022-02-09T15:46:27 IST" duration-ms="56689" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:executerScripts.ContactScript@66d3eec0]" started-at="2022-02-11T13:54:18 IST" name="openBrowser" finished-at="2022-02-11T13:55:13 IST" duration-ms="55113" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,19 +41,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="contact()[pri:0, instance:executerScripts.ContactScript@66d3eec0]" started-at="2022-02-09T15:46:27 IST" name="contact" finished-at="2022-02-09T15:46:49 IST" duration-ms="22469" status="PASS">
+        <test-method signature="contact()[pri:0, instance:executerScripts.ContactScript@66d3eec0]" started-at="2022-02-11T13:55:13 IST" name="contact" finished-at="2022-02-11T13:55:30 IST" duration-ms="16772" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contact -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:executerScripts.ContactScript@66d3eec0]" started-at="2022-02-09T15:46:49 IST" name="closeBrowser" finished-at="2022-02-09T15:46:51 IST" duration-ms="2118" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:executerScripts.ContactScript@66d3eec0]" started-at="2022-02-11T13:55:30 IST" name="closeBrowser" finished-at="2022-02-11T13:55:31 IST" duration-ms="438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- executerScripts.ContactScript -->
     </test> <!-- test2 -->
-    <test started-at="2022-02-09T15:46:51 IST" name="test3" finished-at="2022-02-09T15:47:49 IST" duration-ms="57292">
+    <test started-at="2022-02-11T13:55:31 IST" name="test3" finished-at="2022-02-11T13:56:36 IST" duration-ms="64892">
       <class name="executerScripts.AccountScript">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:executerScripts.AccountScript@f5acb9d]" started-at="2022-02-09T15:46:51 IST" name="openBrowser" finished-at="2022-02-09T15:47:36 IST" duration-ms="44441" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:executerScripts.AccountScript@f5acb9d]" started-at="2022-02-11T13:55:31 IST" name="openBrowser" finished-at="2022-02-11T13:56:20 IST" duration-ms="49370" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,15 +64,84 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="account()[pri:0, instance:executerScripts.AccountScript@f5acb9d]" started-at="2022-02-09T15:47:36 IST" name="account" finished-at="2022-02-09T15:47:47 IST" duration-ms="11358" status="PASS">
+        <test-method signature="account()[pri:0, instance:executerScripts.AccountScript@f5acb9d]" started-at="2022-02-11T13:56:20 IST" name="account" finished-at="2022-02-11T13:56:35 IST" duration-ms="15036" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- account -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:executerScripts.AccountScript@f5acb9d]" started-at="2022-02-09T15:47:47 IST" name="closeBrowser" finished-at="2022-02-09T15:47:49 IST" duration-ms="1488" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:executerScripts.AccountScript@f5acb9d]" started-at="2022-02-11T13:56:35 IST" name="closeBrowser" finished-at="2022-02-11T13:56:36 IST" duration-ms="475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- executerScripts.AccountScript -->
     </test> <!-- test3 -->
+    <test started-at="2022-02-11T13:56:36 IST" name="test4" finished-at="2022-02-11T13:57:24 IST" duration-ms="48591">
+      <class name="executerScripts.TasksScript">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:executerScripts.TasksScript@21e360a]" started-at="2022-02-11T13:56:36 IST" name="openBrowser" finished-at="2022-02-11T13:57:12 IST" duration-ms="36293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="createNewTask()[pri:0, instance:executerScripts.TasksScript@21e360a]" started-at="2022-02-11T13:57:12 IST" name="createNewTask" finished-at="2022-02-11T13:57:24 IST" duration-ms="11710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewTask -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:executerScripts.TasksScript@21e360a]" started-at="2022-02-11T13:57:24 IST" name="closeBrowser" finished-at="2022-02-11T13:57:24 IST" duration-ms="582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- executerScripts.TasksScript -->
+    </test> <!-- test4 -->
+    <test started-at="2022-02-11T13:57:24 IST" name="test5" finished-at="2022-02-11T13:58:08 IST" duration-ms="44253">
+      <class name="executerScripts.OpportunitiesScript">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:executerScripts.OpportunitiesScript@6fd83fc1]" started-at="2022-02-11T13:57:24 IST" name="openBrowser" finished-at="2022-02-11T13:57:59 IST" duration-ms="35047" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="createNewOpportunity()[pri:0, instance:executerScripts.OpportunitiesScript@6fd83fc1]" started-at="2022-02-11T13:57:59 IST" name="createNewOpportunity" finished-at="2022-02-11T13:58:08 IST" duration-ms="8891" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewOpportunity -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:executerScripts.OpportunitiesScript@6fd83fc1]" started-at="2022-02-11T13:58:08 IST" name="closeBrowser" finished-at="2022-02-11T13:58:08 IST" duration-ms="311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- executerScripts.OpportunitiesScript -->
+    </test> <!-- test5 -->
+    <test started-at="2022-02-11T13:58:08 IST" name="test6" finished-at="2022-02-11T13:58:50 IST" duration-ms="41785">
+      <class name="executerScripts.ContentNoteScript">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:executerScripts.ContentNoteScript@2ed2d9cb]" started-at="2022-02-11T13:58:08 IST" name="openBrowser" finished-at="2022-02-11T13:58:38 IST" duration-ms="29394" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="contentNewNote()[pri:0, instance:executerScripts.ContentNoteScript@2ed2d9cb]" started-at="2022-02-11T13:58:38 IST" name="contentNewNote" finished-at="2022-02-11T13:58:50 IST" duration-ms="11899" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contentNewNote -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:executerScripts.ContentNoteScript@2ed2d9cb]" started-at="2022-02-11T13:58:50 IST" name="closeBrowser" finished-at="2022-02-11T13:58:50 IST" duration-ms="484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- executerScripts.ContentNoteScript -->
+    </test> <!-- test6 -->
   </suite> <!-- suite1 -->
 </testng-results>

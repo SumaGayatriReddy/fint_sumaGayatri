@@ -10,25 +10,25 @@ import org.openqa.selenium.support.PageFactory;
 public class Tasks {
 	@FindBy(xpath="(//input[@role='combobox'])[1]")
 	WebElement subject;
-	@FindBy(xpath="//button[@name='Save']")
+	@FindBy(xpath="//button[@title='Save']")
 	WebElement save;
-	@FindBy(xpath="//button[@name='Cancel']")
+	@FindBy(xpath="//button[@title='Cancel']")
 	WebElement cancel;
 	
 	public Tasks(WebDriver  driver)
 	{
 		PageFactory.initElements(driver, this);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	}
-	public void createTask() 
+	public void createNewTask() 
 	{	
-		subject.sendKeys("Reminder");
+		System.out.println("subject");
+		subject.sendKeys(" Payement Reminder ");
 		System.out.println("subject");
 		save.click();
 		System.out.println("click on save");
-		
-		cancel.click();
-		System.out.println("click on cancel");
+		//cancel.click();
+		//System.out.println("click on cancel");
 		
 	}
 }

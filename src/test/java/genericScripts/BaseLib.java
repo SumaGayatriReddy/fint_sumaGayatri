@@ -26,6 +26,7 @@ public class BaseLib {
 	public void openBrowser(String browser) throws Exception
 	{
 		ChromeOptions options = new ChromeOptions();
+		options.addArguments("start-maximized");
 		options.addArguments("disable-popup-blocking");
 		options.addArguments("disable-extensions");
 		options.addArguments("--disable-notifications");

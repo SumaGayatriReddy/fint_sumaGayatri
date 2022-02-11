@@ -15,7 +15,7 @@ public void createNewTask() throws Exception {
 	dashBoard.taskSelect(); 
 	dashBoard.createTask();
 	Tasks task= new Tasks(driver);
-	task.createTask();
+	task.createNewTask();
 }
 
 

@@ -17,23 +17,27 @@ public class Account {
 	WebElement save;
 	@FindBy(xpath="//button[@title='Cancel']")
 	WebElement cancel;
+	WebDriver driver;
 	
 	public Account(WebDriver  driver)
 	{
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 	}
 	public void createNew()   
 	{
 		accSearch.click();
-		accSearch.sendKeys("As");
+		accSearch.sendKeys("Hy");
 		System.out.println("Account search");
 		
 		accName.getText();
 		System.out.println("Account Name");
 		System.out.println(accName.getText()+"Account");
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		accName.click();
 		System.out.println("Account click");
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		save.click();
 		System.out.println("click on save");
 		

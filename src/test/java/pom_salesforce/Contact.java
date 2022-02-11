@@ -68,9 +68,11 @@ public class Contact {
 	WebElement save;
 	@FindBy(xpath="//button[@name='CancelEdit']")
 	WebElement cancel;
+	 WebDriver driver;
 	
 	public Contact(WebDriver  driver)
 	{
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
@@ -79,11 +81,11 @@ public class Contact {
 		
 		//salutation.click();
 		//System.out.println("salutation");
-		firstName.sendKeys("ABCD");
+		firstName.sendKeys("Alpha");
 		System.out.println("Firstname");
-		lastName.sendKeys("ZXYW");
+		lastName.sendKeys("Beta");
 		System.out.println("contact name");
-		searchAccount.sendKeys("Ma");
+		searchAccount.sendKeys("Ba");
 		System.out.println("Search");	
 		System.out.println(searchAccount.getText());
 		selectAccount.click();

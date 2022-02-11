@@ -14,6 +14,7 @@ public void contentNewNote() throws Exception {
 	dashBoard.createNote();
 	ContentNote contact = new ContentNote(driver);
 	contact.createNoteNew();
+	contact.addNote();
 }
 
 

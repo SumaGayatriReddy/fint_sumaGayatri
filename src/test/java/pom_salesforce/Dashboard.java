@@ -30,9 +30,9 @@ public class Dashboard {
 	
 	@FindBy(xpath="//*[@data-id='Task']")
 	WebElement taskBtn;
-	@FindBy(xpath="//*[@data-id='Task']//div/one-app-nav-bar-menu-button/a")
+	@FindBy(xpath="(//a[@title='Show one more action'])")
 	WebElement taskdropDwn;
-	@FindBy(xpath="//span[text()='New Task']")
+	@FindBy(xpath="//a[@title='New Task']")
 	WebElement newTask;
 	
 	@FindBy(xpath="//*[@data-id='ContentNote']")
@@ -42,9 +42,11 @@ public class Dashboard {
 	
 	@FindBy(xpath="//*[@data-id='home']/a")	
 	WebElement homeBtn;
+	WebDriver driver;
 
 public Dashboard(WebDriver driver)
 {
+	this.driver=driver;
 	PageFactory.initElements(driver, this);
 	System.out.println("Dashboard");
 	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -54,29 +56,27 @@ public void accSelect()   {
 
 	accBtn.click();
 	System.out.println(accBtn.getText());
-
+	
 }
 public void createAccount()   { 
 	newAccount.click();
 	System.out.println(newAccount.getText());
-
+	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 }  
 public void conSelect()   {  
 
 	conBtn.click();
 	System.out.println(conBtn.getText());
 	dropDwn.click();
-
 	System.out.println("dropDwn click");
 	System.out.println(dropDwn.getText());
-
 	System.out.println(dropDwn.getTagName());
 }
 public void createContact() 
 {
 	newContact.click();
 	System.out.println(newContact.getText());
-
+	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 }  
 public void oppSelect() 
 {  
@@ -89,7 +89,7 @@ public void createOpportunity()
 {
 	newOpp.click();
 	System.out.println(newOpp.getText());
-
+	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 }  
 
 public void taskSelect() 
@@ -105,7 +105,7 @@ public void createTask()
 	System.out.println(newTask.getText());
 	newTask.click();
 	System.out.println(newTask.getText());
-
+	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 }  
 public void noteSelect() 
 {  
@@ -118,7 +118,7 @@ public void createNote()
 {
 	newNote.click();
 	System.out.println(newNote.getText());
-	
+	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 }  
 
 }
