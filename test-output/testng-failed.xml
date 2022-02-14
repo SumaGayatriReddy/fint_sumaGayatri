@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [suite1]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="test4(failed)">
+  <test thread-count="5" name="test5(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="executerScripts.TasksScript">
+      <class name="salesforcePagesTestScripts.OpportunitiesScript">
         <methods>
-          <include name="createNewTask"/>
-          <include name="closeBrowser"/>
           <include name="openBrowser"/>
+          <include name="createNewOpportunity"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- executerScripts.TasksScript -->
+      </class> <!-- salesforcePagesTestScripts.OpportunitiesScript -->
     </classes>
-  </test> <!-- test4(failed) -->
+  </test> <!-- test5(failed) -->
 </suite> <!-- Failed suite [suite1] -->

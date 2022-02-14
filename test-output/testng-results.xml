@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-11T17:48:46 IST" name="suite1" finished-at="2022-02-11T17:52:09 IST" duration-ms="202907">
+  <suite started-at="2022-02-14T12:11:01 IST" name="suite1" finished-at="2022-02-14T12:18:12 IST" duration-ms="430594">
     <groups>
     </groups>
-    <test started-at="2022-02-11T17:48:46 IST" name="test1" finished-at="2022-02-11T17:49:20 IST" duration-ms="33828">
-      <class name="executerScripts.DashboardScript">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:executerScripts.DashboardScript@2053d869]" started-at="2022-02-11T17:48:46 IST" name="openBrowser" finished-at="2022-02-11T17:49:11 IST" duration-ms="25627" status="PASS">
+    <test started-at="2022-02-14T12:11:01 IST" name="test1" finished-at="2022-02-14T12:11:48 IST" duration-ms="46167">
+      <class name="salesforcePagesTestScripts.HomepageScript">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:salesforcePagesTestScripts.HomepageScript@2053d869]" started-at="2022-02-14T12:11:01 IST" name="openBrowser" finished-at="2022-02-14T12:11:38 IST" duration-ms="36398" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="dashBoard()[pri:0, instance:executerScripts.DashboardScript@2053d869]" started-at="2022-02-11T17:49:11 IST" name="dashBoard" finished-at="2022-02-11T17:49:18 IST" duration-ms="6250" status="PASS">
+        <test-method signature="dashBoard()[pri:0, instance:salesforcePagesTestScripts.HomepageScript@2053d869]" started-at="2022-02-14T12:11:38 IST" name="dashBoard" finished-at="2022-02-14T12:11:47 IST" duration-ms="8967" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dashBoard -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:executerScripts.DashboardScript@2053d869]" started-at="2022-02-11T17:49:18 IST" name="closeBrowser" finished-at="2022-02-11T17:49:20 IST" duration-ms="1896" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:salesforcePagesTestScripts.HomepageScript@2053d869]" started-at="2022-02-14T12:11:47 IST" name="closeBrowser" finished-at="2022-02-14T12:11:48 IST" duration-ms="669" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- executerScripts.DashboardScript -->
+      </class> <!-- salesforcePagesTestScripts.HomepageScript -->
     </test> <!-- test1 -->
-    <test started-at="2022-02-11T17:49:20 IST" name="test2" finished-at="2022-02-11T17:49:47 IST" duration-ms="27424">
-      <class name="executerScripts.ContactScript">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:executerScripts.ContactScript@66d3eec0]" started-at="2022-02-11T17:49:20 IST" name="openBrowser" finished-at="2022-02-11T17:49:33 IST" duration-ms="12834" status="PASS">
+    <test started-at="2022-02-14T12:11:48 IST" name="test2" finished-at="2022-02-14T12:12:46 IST" duration-ms="58638">
+      <class name="salesforcePagesTestScripts.AccountScript">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:salesforcePagesTestScripts.AccountScript@66d3eec0]" started-at="2022-02-14T12:11:48 IST" name="openBrowser" finished-at="2022-02-14T12:12:29 IST" duration-ms="41179" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,42 +41,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="contact()[pri:0, instance:executerScripts.ContactScript@66d3eec0]" started-at="2022-02-11T17:49:33 IST" name="contact" finished-at="2022-02-11T17:49:47 IST" duration-ms="14128" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- contact -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:executerScripts.ContactScript@66d3eec0]" started-at="2022-02-11T17:49:47 IST" name="closeBrowser" finished-at="2022-02-11T17:49:47 IST" duration-ms="450" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- executerScripts.ContactScript -->
-    </test> <!-- test2 -->
-    <test started-at="2022-02-11T17:49:47 IST" name="test3" finished-at="2022-02-11T17:50:25 IST" duration-ms="37269">
-      <class name="executerScripts.AccountScript">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:executerScripts.AccountScript@f5acb9d]" started-at="2022-02-11T17:49:47 IST" name="openBrowser" finished-at="2022-02-11T17:50:07 IST" duration-ms="19175" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="account()[pri:0, instance:executerScripts.AccountScript@f5acb9d]" started-at="2022-02-11T17:50:07 IST" name="account" finished-at="2022-02-11T17:50:24 IST" duration-ms="17594" status="PASS">
+        <test-method signature="account()[pri:0, instance:salesforcePagesTestScripts.AccountScript@66d3eec0]" started-at="2022-02-14T12:12:29 IST" name="account" finished-at="2022-02-14T12:12:46 IST" duration-ms="17049" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- account -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:executerScripts.AccountScript@f5acb9d]" started-at="2022-02-11T17:50:24 IST" name="closeBrowser" finished-at="2022-02-11T17:50:25 IST" duration-ms="490" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:salesforcePagesTestScripts.AccountScript@66d3eec0]" started-at="2022-02-14T12:12:46 IST" name="closeBrowser" finished-at="2022-02-14T12:12:46 IST" duration-ms="406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- executerScripts.AccountScript -->
-    </test> <!-- test3 -->
-    <test started-at="2022-02-11T17:50:25 IST" name="test4" finished-at="2022-02-11T17:50:55 IST" duration-ms="30092">
-      <class name="executerScripts.TasksScript">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:executerScripts.TasksScript@21e360a]" started-at="2022-02-11T17:50:25 IST" name="openBrowser" finished-at="2022-02-11T17:50:45 IST" duration-ms="19837" status="PASS">
+      </class> <!-- salesforcePagesTestScripts.AccountScript -->
+    </test> <!-- test2 -->
+    <test started-at="2022-02-14T12:12:46 IST" name="test3" finished-at="2022-02-14T12:13:44 IST" duration-ms="57730">
+      <class name="salesforcePagesTestScripts.ContactScript">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:salesforcePagesTestScripts.ContactScript@f5acb9d]" started-at="2022-02-14T12:12:46 IST" name="openBrowser" finished-at="2022-02-14T12:13:28 IST" duration-ms="42047" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,19 +64,42 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="createNewTask()[pri:0, instance:executerScripts.TasksScript@21e360a]" started-at="2022-02-11T17:50:45 IST" name="createNewTask" finished-at="2022-02-11T17:50:55 IST" duration-ms="9957" status="PASS">
+        <test-method signature="contact()[pri:0, instance:salesforcePagesTestScripts.ContactScript@f5acb9d]" started-at="2022-02-14T12:13:28 IST" name="contact" finished-at="2022-02-14T12:13:44 IST" duration-ms="15117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contact -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:salesforcePagesTestScripts.ContactScript@f5acb9d]" started-at="2022-02-14T12:13:44 IST" name="closeBrowser" finished-at="2022-02-14T12:13:44 IST" duration-ms="558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- salesforcePagesTestScripts.ContactScript -->
+    </test> <!-- test3 -->
+    <test started-at="2022-02-14T12:13:44 IST" name="test4" finished-at="2022-02-14T12:14:46 IST" duration-ms="62018">
+      <class name="salesforcePagesTestScripts.TasksScript">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:salesforcePagesTestScripts.TasksScript@21e360a]" started-at="2022-02-14T12:13:44 IST" name="openBrowser" finished-at="2022-02-14T12:14:12 IST" duration-ms="27708" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="createNewTask()[pri:0, instance:salesforcePagesTestScripts.TasksScript@21e360a]" started-at="2022-02-14T12:14:12 IST" name="createNewTask" finished-at="2022-02-14T12:14:45 IST" duration-ms="33075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewTask -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:executerScripts.TasksScript@21e360a]" started-at="2022-02-11T17:50:55 IST" name="closeBrowser" finished-at="2022-02-11T17:50:55 IST" duration-ms="293" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:salesforcePagesTestScripts.TasksScript@21e360a]" started-at="2022-02-14T12:14:45 IST" name="closeBrowser" finished-at="2022-02-14T12:14:46 IST" duration-ms="1228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- executerScripts.TasksScript -->
+      </class> <!-- salesforcePagesTestScripts.TasksScript -->
     </test> <!-- test4 -->
-    <test started-at="2022-02-11T17:50:55 IST" name="test5" finished-at="2022-02-11T17:51:30 IST" duration-ms="34639">
-      <class name="executerScripts.OpportunitiesScript">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:executerScripts.OpportunitiesScript@6fd83fc1]" started-at="2022-02-11T17:50:55 IST" name="openBrowser" finished-at="2022-02-11T17:51:19 IST" duration-ms="24494" status="PASS">
+    <test started-at="2022-02-14T12:14:46 IST" name="test5" finished-at="2022-02-14T12:15:44 IST" duration-ms="57245">
+      <class name="salesforcePagesTestScripts.OpportunitiesScript">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:salesforcePagesTestScripts.OpportunitiesScript@6fd83fc1]" started-at="2022-02-14T12:14:46 IST" name="openBrowser" finished-at="2022-02-14T12:15:30 IST" duration-ms="43767" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -110,19 +110,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="createNewOpportunity()[pri:0, instance:executerScripts.OpportunitiesScript@6fd83fc1]" started-at="2022-02-11T17:51:19 IST" name="createNewOpportunity" finished-at="2022-02-11T17:51:29 IST" duration-ms="9772" status="PASS">
+        <test-method signature="createNewOpportunity()[pri:0, instance:salesforcePagesTestScripts.OpportunitiesScript@6fd83fc1]" started-at="2022-02-14T12:15:30 IST" name="createNewOpportunity" finished-at="2022-02-14T12:15:43 IST" duration-ms="13057" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewOpportunity -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:executerScripts.OpportunitiesScript@6fd83fc1]" started-at="2022-02-11T17:51:29 IST" name="closeBrowser" finished-at="2022-02-11T17:51:30 IST" duration-ms="366" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:salesforcePagesTestScripts.OpportunitiesScript@6fd83fc1]" started-at="2022-02-14T12:15:43 IST" name="closeBrowser" finished-at="2022-02-14T12:15:44 IST" duration-ms="417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- executerScripts.OpportunitiesScript -->
+      </class> <!-- salesforcePagesTestScripts.OpportunitiesScript -->
     </test> <!-- test5 -->
-    <test started-at="2022-02-11T17:51:30 IST" name="test6" finished-at="2022-02-11T17:52:09 IST" duration-ms="39133">
-      <class name="executerScripts.ContentNoteScript">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:executerScripts.ContentNoteScript@2ed2d9cb]" started-at="2022-02-11T17:51:30 IST" name="openBrowser" finished-at="2022-02-11T17:51:58 IST" duration-ms="28655" status="PASS">
+    <test started-at="2022-02-14T12:15:44 IST" name="test6" finished-at="2022-02-14T12:16:32 IST" duration-ms="48591">
+      <class name="salesforcePagesTestScripts.ContentNoteScript">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:salesforcePagesTestScripts.ContentNoteScript@2ed2d9cb]" started-at="2022-02-14T12:15:44 IST" name="openBrowser" finished-at="2022-02-14T12:16:25 IST" duration-ms="41773" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,15 +133,38 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="contentNewNote()[pri:0, instance:executerScripts.ContentNoteScript@2ed2d9cb]" started-at="2022-02-11T17:51:58 IST" name="contentNewNote" finished-at="2022-02-11T17:52:08 IST" duration-ms="9878" status="PASS">
+        <test-method signature="contentNewNote()[pri:0, instance:salesforcePagesTestScripts.ContentNoteScript@2ed2d9cb]" started-at="2022-02-14T12:16:25 IST" name="contentNewNote" finished-at="2022-02-14T12:16:32 IST" duration-ms="6484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contentNewNote -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:executerScripts.ContentNoteScript@2ed2d9cb]" started-at="2022-02-11T17:52:08 IST" name="closeBrowser" finished-at="2022-02-11T17:52:09 IST" duration-ms="595" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:salesforcePagesTestScripts.ContentNoteScript@2ed2d9cb]" started-at="2022-02-14T12:16:32 IST" name="closeBrowser" finished-at="2022-02-14T12:16:32 IST" duration-ms="329" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- executerScripts.ContentNoteScript -->
+      </class> <!-- salesforcePagesTestScripts.ContentNoteScript -->
     </test> <!-- test6 -->
+    <test started-at="2022-02-14T12:16:32 IST" name="test7" finished-at="2022-02-14T12:18:12 IST" duration-ms="99728">
+      <class name="salesforcePagesTestScripts.LogoutScript">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:salesforcePagesTestScripts.LogoutScript@1de76cc7]" started-at="2022-02-14T12:16:32 IST" name="openBrowser" finished-at="2022-02-14T12:17:58 IST" duration-ms="85267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="logOut()[pri:0, instance:salesforcePagesTestScripts.LogoutScript@1de76cc7]" started-at="2022-02-14T12:17:58 IST" name="logOut" finished-at="2022-02-14T12:18:11 IST" duration-ms="13557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:salesforcePagesTestScripts.LogoutScript@1de76cc7]" started-at="2022-02-14T12:18:11 IST" name="closeBrowser" finished-at="2022-02-14T12:18:12 IST" duration-ms="899" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- salesforcePagesTestScripts.LogoutScript -->
+    </test> <!-- test7 -->
   </suite> <!-- suite1 -->
 </testng-results>

@@ -38,4 +38,10 @@
  <class name="executerScripts.ContentNoteScript"/>
  </classes>
   </test>
+  <test name="test7">
+ <parameter name="browser" value="firefox" />
+ <classes>
+ <class name="salesforcePagesTestScripts.LogoutScript"/>
+ </classes>
+  </test> 
   </suite>
